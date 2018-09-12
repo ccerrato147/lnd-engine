@@ -8,8 +8,7 @@ const {
  * @param {String} addr wallet address to send the coins to
  * @param {Integer} amount amount of coin to send to wallet address
  * @param {Object} options
- * @param {Number} expiry expiration of refund invoices
- * @return {String} paymentPreimage
+ * @return {String} txid transaction for the withdrawal
  */
 
 async function withdrawFunds (addr, amount) {
