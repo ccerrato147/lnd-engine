@@ -13,7 +13,7 @@ const {
  */
 
 async function withdrawFunds (addr, amount) {
-  const { txid } = await sendCoins({ addr, amount }, { client: this.client })
+  const { txid } = await sendCoins(addr, amount, { client: this.client })
 
   this.logger.debug('Coins successfully sent', { txid })
 
